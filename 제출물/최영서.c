@@ -129,8 +129,6 @@ void Make_RealWordList()
      fclose(p_file3);
 }
 
-
-
 void main()
 {
         int num,LOGIN=0;
@@ -138,28 +136,27 @@ void main()
 	
 	FILE *p_file = fopen("LOGIN.txt","a");
 	fclose(p_file);
-	make_linkedlist();
-	
+	make_linkedlist();	
         while(1) {
-        printf(" ================= \n");
-	printf("====2021 SPLUG ====\n");
-	printf("=========");
-	if(LOGIN == 0)
-		printf("========\n");
-	if(LOGIN == 1)
-		printf("%s\n",LOGIN_ID);
-	printf("===================\n");
-	printf("=       메뉴      = \n");
-	printf("===================\n");
-        printf("1. 회원가입        \n");
-        printf("2. 로그인          \n");
-        printf("3. 로그아웃        \n");
-        printf("4. 영어 단어 맞추기\n");
-        printf("5. 회원 탈퇴       \n");
-        printf("6. 프로그램 종료   \n");
-        printf("===================\n");
-        printf(" 번호 선택: ");
-        scanf("%d",&num);  
+			printf(" ================= \n");
+			printf("====2021 SPLUG ====\n");
+			printf("=========");
+			if(LOGIN == 0)
+				printf("========\n");
+			if(LOGIN == 1)
+				printf("%s\n",LOGIN_ID);
+			printf("===================\n");
+			printf("=       메뉴      = \n");
+			printf("===================\n");
+			printf("1. 회원가입        \n");
+			printf("2. 로그인          \n");
+			printf("3. 로그아웃        \n");
+			printf("4. 영어 단어 맞추기\n");
+			printf("5. 회원 탈퇴       \n");
+			printf("6. 프로그램 종료   \n");
+			printf("===================\n");
+			printf(" 번호 선택: ");
+			scanf("%d",&num);  
     	if(num==1){
 		  int n=1;
 	  char ID[20],PASS[20],NAME[10];
@@ -341,4 +338,3 @@ void main()
 	}
 
 }
-
