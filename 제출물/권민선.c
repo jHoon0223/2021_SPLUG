@@ -7,7 +7,6 @@
 
 extern int index = 0;
 
-
 typedef struct Word {
 	char source[MAX];
 	char target[MAX];
@@ -23,8 +22,6 @@ typedef struct Member {
 Member members[MAX];
 
 Member* First = NULL;
-
-
 
 void Infodel()
 {
@@ -52,8 +49,6 @@ void Infodel()
 
 
 int n = 0;
-
-
 
 void memberdelete(char MemberID[]) {}
 
@@ -202,7 +197,6 @@ start:
 		}
 		else if (k == 2) { goto start; }
 	}
-
 		
 		else if (i == 5) {
 			char x = {0};
@@ -217,17 +211,7 @@ start:
 		Infodel();
 		
 		}
-			
-		
 
-
-
-
-
-		
-
-		
-	
 	return 0;
 }
 
